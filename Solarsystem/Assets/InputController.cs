@@ -15,7 +15,7 @@ public class InputController : MonoBehaviour {
         var rb = GetComponent<Rigidbody>();
         if (Input.GetKey(KeyCode.UpArrow))
         {           
-            rb.AddForce(this.transform.rotation * Vector3.up);         
+            rb.AddForce(this.transform.rotation * Vector3.forward);         
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
@@ -26,12 +26,12 @@ public class InputController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Rotate(0, 0, -1);
+            this.transform.Rotate(0, -1, 0);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.Rotate(0, 0, 1);
+            this.transform.Rotate(0, 1, 0);
         }
         if (Input.GetKey(KeyCode.Q))
         {
