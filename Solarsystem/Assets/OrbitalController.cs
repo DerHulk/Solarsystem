@@ -38,4 +38,5 @@ public class OrbitalController : MonoBehaviour {
         this.transform.Rotate(Vector3.up, ((this.Rotation/(24*60*60)) * Time.deltaTime));
 
     }
+    
 }
