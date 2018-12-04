@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputController : MonoBehaviour {
+public class InputController : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    private Transform ChildTransform;
+
+    // Use this for initialization
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         var rb = GetComponent<Rigidbody>();
         if (Input.GetKey(KeyCode.UpArrow))
-        {           
-            rb.AddForce(this.transform.rotation * Vector3.forward);         
+        {
+            rb.AddForce(this.transform.GetChild(0).rotation * Vector3.forward);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
@@ -26,12 +29,12 @@ public class InputController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Rotate(0, -1, 0);
+            this.transform.GetChild(0).Rotate(0, 1, 0);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
-        {
-            this.transform.Rotate(0, 1, 0);
+        {            
+            this.transform.GetChild(0).Rotate(0, -1, 0);
         }
         if (Input.GetKey(KeyCode.Q))
         {

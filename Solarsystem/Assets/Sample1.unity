@@ -191,8 +191,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86166378}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.77, z: 0}
+  m_LocalRotation: {x: 0, y: 0.99393857, z: 0, w: -0.109937355}
+  m_LocalPosition: {x: 1056.1854, y: -6.3, z: 1083.2583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1222929340}
@@ -329,7 +329,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
-  m_Range: 1000
+  m_Range: 100000
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -469,6 +469,10 @@ Prefab:
     - target: {fileID: 400000, guid: 9db4ddbfa9f535344a3ad3020a241185, type: 3}
       propertyPath: m_LocalScale.y
       value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9db4ddbfa9f535344a3ad3020a241185, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9db4ddbfa9f535344a3ad3020a241185, type: 3}
@@ -1158,7 +1162,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222929339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.58}
+  m_LocalPosition: {x: 0, y: 10, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 86166383}
@@ -1202,8 +1206,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 700
+  field of view: 17.7
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1245,7 +1249,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501587973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1846135328}
